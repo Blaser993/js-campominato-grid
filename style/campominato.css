@@ -37,3 +37,7 @@
     width: calc(100%/10);
     border: solid 1px green;
 }
+
+.dark{
+    background-color: rgba(0, 255, 0, 0.5);
+}

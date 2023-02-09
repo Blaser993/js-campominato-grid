@@ -21,19 +21,29 @@ function() {
 
     const griglia = document.querySelector(".griglia");
 
-    for (let i = 0; i < numeroCelle ; i++){
+    for (let i = 1; i < numeroCelle + 1 ; i++){
 
+        
     
         let creoCella = document.createElement("div")
         griglia.append(creoCella)
         creoCella.classList.add("cella")
         creoCella.append(i)
+
+
+        
         //console.log(creoCella)
     
     
     }
 
+    const clickedCell = document.querySelectorAll("cella")
+    clickedCell.addEventListener ("click", 
 
+    function(){
+        var cliccato = document.getElementsByClassName("cella");   
+        cliccato.classList.add("dark");
+    })
 
 
 
