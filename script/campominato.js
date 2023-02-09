@@ -2,6 +2,7 @@ console.log("BOOM!");
 
 const LATOGRIGLIA = 10
 
+let numeroCelle = LATOGRIGLIA * LATOGRIGLIA
 
 // Oggi concentriamoci solamente sulla creazione della griglia:
 // l’utente clicca su un pulsante PLAY  per generare la una griglia quadrata 10 * 10
@@ -17,11 +18,26 @@ function() {
     var element = document.getElementById("play");
     element.classList.add("hide");
     console.log(numeroCelle)
+
+    
+
+
+
+
+
 })
 
-let numeroCelle = LATOGRIGLIA * LATOGRIGLIA
 
-console.log(numeroCelle)
 
 const creaGriglia = document.querySelector(".griglia");
 
+for (let i = 0; i < numeroCelle ; i++){
+
+    
+    let div = document.createElement("div")
+    div.append(i)
+
+    console.log(div.textContent)
+    
+    
+}
