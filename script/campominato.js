@@ -19,7 +19,19 @@ function() {
     element.classList.add("hide");
     console.log(numeroCelle)
 
+    const griglia = document.querySelector(".griglia");
+
+    for (let i = 0; i < numeroCelle ; i++){
+
     
+        let creoCella = document.createElement("div")
+        griglia.append(creoCella)
+        creoCella.classList.add("cella")
+        creoCella.append(i)
+        //console.log(creoCella)
+    
+    
+    }
 
 
 
@@ -29,15 +41,3 @@ function() {
 
 
 
-const creaGriglia = document.querySelector(".griglia");
-
-for (let i = 0; i < numeroCelle ; i++){
-
-    
-    let div = document.createElement("div")
-    div.append(i)
-
-    console.log(div.textContent)
-    
-    
-}
